@@ -1,0 +1,13 @@
+p {
+  font-family: Arial;
+}
+
+h1 {
+  color: maroon;
+}
+
+.title {
+  color: teal;
+}
+
+/* What I learned: It's also possible to select an element by its class attribute. */
