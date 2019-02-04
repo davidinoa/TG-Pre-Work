@@ -1,0 +1,15 @@
+.grid {
+  border: 2px blue solid;
+  display: grid;
+  width: 400px;
+  height: 500px;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
+
+/* To set up a grid, you need to have both a grid container and grid items. The grid container will be a parent element that contains grid items as children and applies overarching styling and positioning to them. */
