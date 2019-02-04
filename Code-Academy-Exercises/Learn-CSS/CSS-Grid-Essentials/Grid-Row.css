@@ -1,10 +1,14 @@
 .grid {
   display: grid;
   border: 2px blue solid;
-  width: 400px;
   height: 500px;
-  grid-template-columns: 100px 50% 200px;
-  grid-template-rows: 40% 50% 50px;
+  width: 500px;
+  grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
+  grid-gap: 5px;
+}
+
+.a {
+  grid-row: 5 / 7;
 }
 
 .box {
@@ -14,4 +18,4 @@
   border: 2px dodgerblue solid;
 }
 
-/* To specify the number and size of the rows, we can use the property grid-template-rows. */
+/* We can use the property grid-row as shorthand for grid-row-start and grid-row-end. */
