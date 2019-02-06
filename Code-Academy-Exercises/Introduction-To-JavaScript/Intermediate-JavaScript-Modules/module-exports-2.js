@@ -1,9 +1,10 @@
-const Airplane = require('./1-airplane.js');
+const Airplane = {};
 
-function displayAirplane() {
-  console.log(Airplane.myAirplane);
-}
+module.exports = {
+  myAirplane: 'CloudJet',
+  displayAirplane: function() {
+    return this.myAirplane;
+  },
+};
 
-displayAirplane();
-
-// To make use of the exported module and the behavior we define within it, we import the module. A common way to do this is with the require() function.
+// We can also wrap any collection of data and functions in an object, and export the object using module.exports.
